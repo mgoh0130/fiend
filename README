@@ -1,0 +1,21 @@
+Write a utility
+
+  % ./fiend [-P | -L]* FILENAME* EXPRESSION
+
+that does depth-first traversals of the directory tree(s) rooted at the        |
+FILENAME(s) specified in the left-to-right order that they appear in the       |
+command line.  For each file in each tree, it evaluates the EXPRESSION         |
+specified from left to right, according to the rules of precedence, until the  |
+outcome is known (the left-hand side of an AND operation is false or the       |
+left-hand side of an OR operation is true).                                    |
+ 
+fiend (pronounced fie-end) is a stripped down version of the Linux utility find
+that implements only the subset of command-line arguments containing:
+
+* the "real" options -P and -L;
+ 
+* the expression components -depth, -exec, -maxdepth, -name, -newer, -print;
+ 
+* the operators -o and -a.
+ 
+Except as noted below, fiend matches the behavior of /bin/find
