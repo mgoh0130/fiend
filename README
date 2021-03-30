@@ -1,5 +1,3 @@
-***PLEASE EMAIL ME AT michelle.goh@yale.edu IF YOU WOULD LIKE TO SEE MY CODE FOR THIS***
-
 Write a utility
 
   % ./fiend [-P | -L]* FILENAME* EXPRESSION
